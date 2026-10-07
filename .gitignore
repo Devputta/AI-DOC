@@ -1,0 +1,17 @@
+node_modules/
+build/
+dist/
+coverage/
+.DS_Store
+*.log
+.env*
+!.env.example
+data/
+uploads/
+processed/
+*.db
+*.sqlite
+*.sqlite3
+parser-output/
+Thumbs.db
+

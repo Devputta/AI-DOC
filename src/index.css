@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-paper: #F4F1E9;
+    --bg-folio: #FCFBF7;
+    --bg-desk: #E6E0D4;
+    --ink-primary: #1F201C;
+    --ink-secondary: #4A4942;
+    --ink-muted: #6E6C63;
+    --rule-strong: #242520;
+    --rule-hairline: #D5CFC2;
+    --accent-vermilion: #B84B2F;
+    --accent-vermilion-hover: #963920;
+  }
+
+  body {
+    background-color: #F4F1E9;
+    color: #1F201C;
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    margin: 0;
+    padding: 0;
+    background-image: radial-gradient(rgba(36, 37, 32, 0.03) 1px, transparent 0);
+    background-size: 24px 24px;
+  }
+
+  h1, h2, h3, .font-editorial {
+    font-family: 'Newsreader', Georgia, 'Times New Roman', serif;
+  }
+
+  .font-mono-tabular {
+    font-family: 'IBM Plex Mono', monospace;
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+/* Tactile editorial rules & folio sheet */
+.editorial-double-rule {
+  border-top: 2px solid #242520;
+  border-bottom: 1px solid #D5CFC2;
+  height: 5px;
+}
+
+.folio-sheet {
+  background-color: #FCFBF7;
+  box-shadow:
+    0 1px 2px rgba(36, 37, 32, 0.06),
+    0 8px 24px -4px rgba(36, 37, 32, 0.08),
+    2px 2px 0 #EFECE4,
+    4px 4px 0 #E2DDD1;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

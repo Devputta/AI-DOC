@@ -1,0 +1,6 @@
+{
+  "name": "DocuLens",
+  "description": "Local-first document intelligence workspace for evidence-grounded PDF search, cited Q&A, table extraction with safe CSV export, and side-by-side document comparison.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
